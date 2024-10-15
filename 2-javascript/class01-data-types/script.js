@@ -10,10 +10,13 @@ console.log(myName);
 console.log(cpf);
 console.log(isAdmin);
 
-document.write("Boas Vindas ao sistema," + myName);// concat
-console.log(myName + 1);
-console.log(Number("2") + 3);// Type coversion
-console.log(Number("2") + 3);// Type coversion
+document.write("Bem-vindo, " + myName); // concat
+console.log(myName + 1); // type coercion
+console.log(Number("2") + 3); // type coversion
+console.log(typeof Number("2"));
+console.log(typeof String(age));
 
+// template literals (string)
+console.log(`Meu nome é ${myName} e tenho ${age} anos`);
 
 
