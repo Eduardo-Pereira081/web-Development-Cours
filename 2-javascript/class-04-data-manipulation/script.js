@@ -76,3 +76,37 @@ function wordCount(text) {
 }
 const text = "Antonio Eduardo pereira Oliveira"
 console.log(wordCount(text));
+
+function verificarPalindromo(texto) {
+    // Remove espaços, pontuações e coloca tudo em minúsculas para padronizar
+    let textoLimpo = texto.toLowerCase().replace(" ", "");
+    // Inverte o texto
+    let textoInvertido = textoLimpo.split("").reverse().join("");
+    // Verifica se o texto original é igual ao invertido
+    return textoLimpo === textoInvertido;
+}
+console.log(verificarPalindromo("A man a plan a canal Panama"));
+console.log(verificarPalindromo ("racecar"));
+console.log(verificarPalindromo("bom"));
+
+// DATA 
+
+function diasParaAnoNovo(){
+    const anoNovo = new Date("2025-01-01");
+    const hoje = new Date();
+
+    const diferenca = anoNovo - hoje;
+    const dias = Math.ceil(diferenca / (1000 * 60 * 60 * 24));
+    return dias;
+}
+console.log(diasParaAnoNovo ("dias"));
+
+
+////////////////////////////////////////////////////////////////////////
+
+
+const newYear = new Date ("2025-01-01 00:00:00");
+const today = new Date();
+const daysToNewYear = newYear - today;
+
+console.log(Math.floor(daysToNewYear / 1000 / 60 / 60 / 24 ));
