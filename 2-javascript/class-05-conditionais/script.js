@@ -60,3 +60,21 @@ finally{
 }
 
 document.write("Running App is Online!");
+
+const n1 = 7
+const n2 = 8
+const n3 = 9
+
+const averege = (n1 + n2 + n3) / 3;
+
+console.log(averege);
+
+if(averege >= 7){
+    console.log("Aprovado pro média!");
+}
+else if(averege >= 3){
+    console.log("Em recuperação!");
+}
+else{
+    console.log("Aluno reprovado!");
+}
