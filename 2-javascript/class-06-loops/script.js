@@ -34,3 +34,19 @@ else {
 }
 
  console.log("End!");
+
+ const numbes = [];
+  
+ while(numbes.length <6 ){
+    const draw = Math.ceil(Math.random() * 60);
+    const numbesFormatted = String(draw).padStart(2,0)
+    
+    if(numbes.includes(numbesFormatted)){
+        continue;
+    }
+    else{
+        numbes.push(numbesFormatted);
+    }
+ }
+
+ console.log(numbes.sort((a,b)=> a - b).join("-"));
