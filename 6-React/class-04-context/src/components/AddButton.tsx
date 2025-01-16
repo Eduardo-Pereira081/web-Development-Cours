@@ -1,7 +1,14 @@
+import { useContext } from "react";
+import { ValueContext } from "../contexts/a";
+
+
 export function AddButton() {
-    return (
-      <>
-        <button>Add+</button>
-      </>
-    );
-  }
+  const { setUpValue, setDownValue } = useContext(ValueContext);
+
+  return (
+    <>
+      <button onClick={setUpValue}>ADD+</button>
+      <button onClick={setDownValue}>REM-</button>
+    </>
+  );
+}
