@@ -5,7 +5,7 @@ export const Reset = createGlobalStyle`
     font-size:62.5%;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,6 +13,7 @@ export const Reset = createGlobalStyle`
 
 body{
     font-size:1.6rem;
-    
+    background: ${({ theme }) => theme.colors.gray0};
+    color: ${({ theme }) => theme.colors.gray5};
 }
 `;

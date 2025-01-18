@@ -1,3 +1,4 @@
+import { Cardmanga } from "./components/CardManga";
 import { Container } from "./style";
 
 export function App() {
@@ -5,7 +6,7 @@ export function App() {
     <Container>
       <h1>class-05-styles</h1>
 
-      
+      <Cardmanga></Cardmanga>
     </Container>
   );
 }
